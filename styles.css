@@ -8,13 +8,14 @@
       body {
         background-image: url(images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-color: lightcyan;
+        /* background-size: cover; */
+        background-color: hsl(225, 100%, 94%);;
         font-family: 'Red Hat Display', sans-serif;
         line-height: 1.6;
         min-height: 100vh;
         min-width: 100vw;
         display: grid;
+        background-position: top;
         place-items: center;
   
             }
@@ -26,16 +27,16 @@
       }
   
       .top {
-        width: 380px;
+        width: 370px;
       }
   
       .image {
         border-radius: 10px 10px 0px 0px;
-        width: 380px;
+        width: 370px;
       }
   
       .card {
-        padding: 2em 2em;
+        padding: 1em 2em 2em 2em;
       }
   
       .card h2 {
@@ -116,7 +117,8 @@
         color: white;
         font-weight: 700;
         font-size: 0.9em;
-        box-shadow: 0 .5rem .8rem .5rem hsla(245, 75%, 52%, 0.2);;
+        box-shadow: 0 0.5rem .8rem .5rem hsla(245, 75%, 52%, 0.2);
+        z-index: 10;
   
         /* box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.6) 0px 50px 100px -20px, #382AE1 0px 30px 60px -30px;       */
         }
@@ -133,7 +135,7 @@
         border: none;
         cursor: pointer;
         font-weight: 700;
-        font-size: 0.9em;
+        font-size: 1em;
         color: #7280a7;
       }
   
