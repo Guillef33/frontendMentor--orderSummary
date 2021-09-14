@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: lightcyan;
+      font-family: 'Red Hat Display', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      min-width: 100vw;
+      display: grid;
+      place-items: center;
+
+          }
+
+    .container {
+      max-width: 370px;
+     background-color: white;
+     border-radius: 20px;
+    }
+
+    .top {
+      width: 380px;
+    }
+
+    .image {
+      border-radius: 10px 10px 0px 0px;
+      width: 380px;
+    }
+
+    .card {
+      padding: 2em 2em;
+    }
+
+    .card h2 {
+      text-align: center;
+      padding-bottom: 12px;
+      color: #12203B;
+      font-weight: 900;
+    }
+
+    .card p {
+      text-align: center;
+      font-size: 16px;
+      color: 	#7280a7;
+      font-weight: 500;
+      line-height: 1.6em;
+    }
+
+    .text-container {
+      padding: 0em 2em;
+    }
+
+    .plan {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #F8F9FE;
+      margin-top: 20px;
+    }
+
+
+    .anualplan {
+      display: flex;
+      align-items: center;
+      background-color: #F8F9FE;
+
+    }
+
+    .anualplan h4 {
+     font-size: 14px;
+     color: #12203B;
+     padding-bottom: 5px;
+    }
+
+    .anualplan .icon {
+      height: 40px;
+    }
+
+    .data {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0em 0em 0em;
+
+    }
+
+    .button-payment {
+      background-color: #382AE1;
+      border-radius: 10px;
+      width: 100%;
+      padding: 1em 2em;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 .5rem .8rem .5rem hsla(245, 75%, 52%, 0.2);;
+
+      /* box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.6) 0px 50px 100px -20px, #382AE1 0px 30px 60px -30px;       */
+      }
+
+      .button-payment:hover {
+        background-color: #766CF1;;
+      }
+
+    .button-cancel {
+      background-color: white;
+      border-radius: 10px;
+      width: 100%;
+      padding: 1em 2em;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      color: #ADB6BF;
+    }
+
+    .button-change {
+      color: #382AE1;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px){
+
+      body {
+        background-image: url(images\pattern-background-mobile.svg);
+      }
+
+      .container {
+      width: 90%;
+      }
+
+      .top {
+        width: 100%;
+      }
+
+      .image {
+        width: 100%;
+      }
+
+      .button-wrapper {
+        padding: 2em 0em 0em 0em;
+      }
+
+      .card {
+      padding: 1.5em;
+      }
+    }
+
+   
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top">
+      <img src="images/illustration-hero.svg" alt="" class="image">
+
+    </div>
+    <div class="card">
+      <div class="text-container">
+        <h2>Order Summary</h2>
+        <p> You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+      </div>
+      <div class="plan">
+        <div class="anualplan">
+          <img src="images/icon-music.svg" alt="" class="icon">
+          <div class="data">
+            <h4>Annual Plan</h4>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        <a href="" class="button-change">Change</a>
+      </div>
+      <div class="button-wrapper">
+        <button class="button-payment">Proceed to Payment</button>
+        <button class="button-cancel">Cancel Order</button>
+      </div>
+      
+    </div>
+
+
+
+  </div>
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
